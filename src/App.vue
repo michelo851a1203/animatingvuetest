@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <transitionsample></transitionsample>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import transitionsample from './components/transitionSample.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    transitionsample
   }
 }
 </script>
