@@ -5,19 +5,20 @@
     <transition name="slide" mode="out-in">
       <router-view class="mt-4"></router-view>
     </transition> -->
-
-    <grouptransition></grouptransition>
+    <!-- <grouptransition></grouptransition> -->
+    <animatinghook></animatinghook>
   </div>
 </template>
 
 <script>
 // import router from "./router";
-import grouptransition from './components/grouplistSample.vue'
+// import grouptransition from './components/grouplistSample.vue'
+import animatinghook from './components/animatinghook.vue'
 
 export default {
   name: "app",
   components:{
-    grouptransition
+    animatinghook
   }
 };
 </script>
