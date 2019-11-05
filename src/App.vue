@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <router-link class="p-3" to="/">首頁</router-link>
+    <!-- <router-link class="p-3" to="/">首頁</router-link>
     <router-link class="p-3" to="/test">測試頁</router-link>
     <transition name="slide" mode="out-in">
       <router-view class="mt-4"></router-view>
-    </transition>
+    </transition> -->
+
+    <grouptransition></grouptransition>
   </div>
 </template>
 
 <script>
-import router from "./router";
+// import router from "./router";
+import grouptransition from './components/grouplistSample.vue'
 
 export default {
   name: "app",
-  router
+  components:{
+    grouptransition
+  }
 };
 </script>
 
@@ -37,7 +42,7 @@ export default {
 
 .slide-enter{
   opacity:0;
-  transform:translateX(20px);
+  transform:translateX(-20px);
 }
 .slide-leave-active,
 .slide-enter-active{
@@ -45,7 +50,7 @@ export default {
 }
 .slide-leave-to{
   opacity:0;
-  transform:translateX(-20px);
+  transform:translateX(20px);
 }
 
 // 關於 transform 的用法，可以用 transform:translateX
